@@ -20,11 +20,18 @@ class CommentController extends Controller
     {
         $this->authorize('view', $ticket);
 
+        $isInternal = $request->boolean('is_internal', false);
+
+        // Only agents and admins can create internal comments
+        if ($isInternal && ! $request->user()->isAgent()) {
+            $isInternal = false;
+        }
+
         $comment = $ticket->comments()->create([
             'organization_id' => $ticket->organization_id,
             'user_id' => $request->user()->id,
             'body' => $request->body,
-            'is_internal' => $request->boolean('is_internal', false),
+            'is_internal' => $isInternal,
         ]);
 
         ActivityLog::create([
