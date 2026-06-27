@@ -84,6 +84,19 @@ describe('Comments', function () {
             ->assertJsonPath('is_internal', true);
     });
 
+    it('prevents customers from creating internal comments', function () {
+        $token = $this->customer->createToken('test')->plainTextToken;
+
+        $response = $this->withToken($token)
+            ->postJson("/api/tickets/{$this->ticket->id}/comments", [
+                'body' => 'Trying to be internal',
+                'is_internal' => true,
+            ]);
+
+        $response->assertCreated()
+            ->assertJsonPath('is_internal', false);
+    });
+
     it('validates required body on comment create', function () {
         $token = $this->admin->createToken('test')->plainTextToken;
 
