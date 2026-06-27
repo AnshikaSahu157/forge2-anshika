@@ -1,0 +1,11 @@
+# Hermes (orchestrator / product owner) -- EastRouter config. Secrets REDACTED on purpose.
+provider: eastrouter
+base_url: https://api.eastrouter.com/v1
+api_key:  ${EASTROUTER_API_KEY}      # never commit the real sk-er_ key
+model:    deepseek/deepseek-v4-pro    # strong reasoning for planning; or z-ai/glm-5.1
+memory:
+  enabled: true
+slack:
+  app_token: ${SLACK_APP_TOKEN}
+  bot_token: ${SLACK_BOT_TOKEN}
+  channels: ["#sprint-main", "#agent-coder", "#human-review"]
