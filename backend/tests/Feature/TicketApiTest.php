@@ -155,6 +155,19 @@ describe('Ticket CRUD', function () {
         expect($response->json('requester.id'))->toBe($this->customer1->id);
     });
 
+    it('prevents assigning ticket to user from another organization', function () {
+        $token = loginAs($this->admin1);
+
+        $this->withToken($token)
+            ->postJson('/api/tickets', [
+                'subject' => 'Cross-org assignee',
+                'description' => 'Should fail validation',
+                'assignee_id' => $this->admin2->id,
+            ])
+            ->assertStatus(422)
+            ->assertJsonValidationErrors(['assignee_id']);
+    });
+
     it('sets requester to authenticated user', function () {
         $token = loginAs($this->customer1);
 
