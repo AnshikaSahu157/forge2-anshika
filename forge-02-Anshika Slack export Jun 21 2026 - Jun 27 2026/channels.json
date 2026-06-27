@@ -1,0 +1,175 @@
+[
+{
+    "id": "C0BC50P2L6Q",
+    "name": "new-channel",
+    "created": 1782013788,
+    "creator": "U0BC1BG8FQS",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U0BC1BG8FQS"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "This channel is for everything #new-channel. Hold meetings, share docs, and make decisions together with your team.",
+        "creator": "U0BC1BG8FQS",
+        "last_set": 1782013788
+    }
+},
+{
+    "id": "C0BC60E34NQ",
+    "name": "agent-log",
+    "created": 1782039722,
+    "creator": "U0BC1BG8FQS",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U0BC1BG8FQS",
+        "U0BCWKWKJAC"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "C0BCVKNNZDW",
+    "name": "all-forge-02-anshika",
+    "created": 1782013711,
+    "creator": "U0BC1BG8FQS",
+    "is_archived": false,
+    "is_general": true,
+    "members": [
+        "U0BC1BG8FQS"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "Share announcements and updates about company news, upcoming events, or teammates who deserve some kudos. ⭐",
+        "creator": "U0BC1BG8FQS",
+        "last_set": 1782013711
+    }
+},
+{
+    "id": "C0BCWKEPTH6",
+    "name": "agent-coder",
+    "created": 1782039707,
+    "creator": "U0BC1BG8FQS",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U0BC1BG8FQS",
+        "U0BCWKWKJAC"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "C0BEE2KJ46L",
+    "name": "ci-cd",
+    "created": 1782539265,
+    "creator": "U0BC1BG8FQS",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U0BC1BG8FQS",
+        "U0BCWKWKJAC"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "C0BDGC5V5U5",
+    "name": "human-review",
+    "created": 1782539284,
+    "creator": "U0BC1BG8FQS",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U0BC1BG8FQS",
+        "U0BCWKWKJAC"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "C0BC08WD4VC",
+    "name": "sprint-main",
+    "created": 1782039683,
+    "creator": "U0BC1BG8FQS",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U0BC1BG8FQS",
+        "U0BCWKWKJAC"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "C0BBV0YQ8LB",
+    "name": "social",
+    "created": 1782013712,
+    "creator": "U0BC1BG8FQS",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U0BC1BG8FQS"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "Other channels are for work. This one’s just for fun. Get to know your teammates and show your lighter side. 🎈",
+        "creator": "U0BC1BG8FQS",
+        "last_set": 1782013712
+    }
+}
+]

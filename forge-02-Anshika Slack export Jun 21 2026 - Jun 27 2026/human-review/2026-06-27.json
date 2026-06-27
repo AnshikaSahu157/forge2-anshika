@@ -1,0 +1,588 @@
+[
+    {
+        "user": "U0BC1BG8FQS",
+        "type": "message",
+        "ts": "1782550891.461859",
+        "client_msg_id": "c817a38d-7d82-4525-87fd-7a9ccab6e057",
+        "text": "Sprint 1 PR #1 reviewed and merged :white_check_mark: CI green. 10\/10 Pest tests passing. Backend foundation complete — migrations, seeders, multi-tenancy middleware, Sanctum auth done.",
+        "team": "T0BBV0YC23V",
+        "user_team": "T0BBV0YC23V",
+        "source_team": "T0BBV0YC23V",
+        "user_profile": {
+            "avatar_hash": "02edacc06118",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2026-06-20\/11411232622593_02edacc06118a9d2d86c_72.png",
+            "first_name": "Anshika",
+            "real_name": "Anshika Sahu",
+            "display_name": "",
+            "team": "T0BBV0YC23V",
+            "name": "anshika15032004",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "3\/PN5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Sprint 1 PR #1 reviewed and merged "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " CI green. 10\/10 Pest tests passing. Backend foundation complete — migrations, seeders, multi-tenancy middleware, Sanctum auth done."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BC1BG8FQS",
+        "type": "message",
+        "ts": "1782550940.299049",
+        "client_msg_id": "fd210d67-c3b8-4d6d-9e8c-b99590d0445c",
+        "text": "<@U0BCWKWKJAC> Sprint 1 PR #1 reviewed and merged :white_check_mark: CI green. 10\/10 Pest tests passing. Backend foundation complete — migrations, seeders, multi-tenancy middleware, Sanctum auth done. Approving this release candidate.",
+        "team": "T0BBV0YC23V",
+        "user_team": "T0BBV0YC23V",
+        "source_team": "T0BBV0YC23V",
+        "user_profile": {
+            "avatar_hash": "02edacc06118",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2026-06-20\/11411232622593_02edacc06118a9d2d86c_72.png",
+            "first_name": "Anshika",
+            "real_name": "Anshika Sahu",
+            "display_name": "",
+            "team": "T0BBV0YC23V",
+            "name": "anshika15032004",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "A\/PkS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0BCWKWKJAC"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Sprint 1 PR #1 reviewed and merged "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " CI green. 10\/10 Pest tests passing. Backend foundation complete — migrations, seeders, multi-tenancy middleware, Sanctum auth done. Approving this release candidate."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782550952.638879",
+        "edited": {
+            "user": "U0BCWKWKJAC",
+            "ts": "1782550953.000000"
+        },
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": "Nice, solid foundation! Migrations, seeders, multi-tenancy, and auth all locked in with green CI — that's a clean Sprint 1 ship. :rocket:",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "deleted": false,
+            "name": "OpenClaw Bot",
+            "updated": 1782040035,
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "team_id": "T0BBV0YC23V"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "J9m",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Nice, solid foundation! Migrations, seeders, multi-tenancy, and auth all locked in with green CI — that's a clean Sprint 1 ship. "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "rocket",
+                                "unicode": "1f680"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BC1BG8FQS",
+        "type": "message",
+        "ts": "1782553775.655709",
+        "client_msg_id": "7e81bf68-30b1-4406-ae42-488e1fd796b8",
+        "text": "Sprint 2 QA complete. PR #2 fixes applied:\n:white_check_mark: assignee_id now org-scoped (cross-tenant assignment blocked)\n:white_check_mark: Internal comments hidden from customers\n:white_check_mark: 49\/49 Pest tests passing (135 assertions)\nApproving PR #2 for merge.",
+        "team": "T0BBV0YC23V",
+        "user_team": "T0BBV0YC23V",
+        "source_team": "T0BBV0YC23V",
+        "user_profile": {
+            "avatar_hash": "02edacc06118",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2026-06-20\/11411232622593_02edacc06118a9d2d86c_72.png",
+            "first_name": "Anshika",
+            "real_name": "Anshika Sahu",
+            "display_name": "",
+            "team": "T0BBV0YC23V",
+            "name": "anshika15032004",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "xfsLK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Sprint 2 QA complete. PR #2 fixes applied:\n"
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " assignee_id now org-scoped (cross-tenant assignment blocked)\n"
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Internal comments hidden from customers\n"
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " 49\/49 Pest tests passing (135 assertions)\nApproving PR #2 for merge."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BC1BG8FQS",
+        "type": "message",
+        "ts": "1782553796.221019",
+        "client_msg_id": "e5f5e3be-d405-47d1-bb66-4bedc5c01f45",
+        "text": "<@U0BCWKWKJAC> Sprint 2 QA complete. PR #2 fixes applied:\n:white_check_mark: assignee_id now org-scoped (cross-tenant assignment blocked)\n:white_check_mark: Internal comments hidden from customers\n:white_check_mark: 49\/49 Pest tests passing (135 assertions)\nApproving PR #2 for merge.",
+        "team": "T0BBV0YC23V",
+        "user_team": "T0BBV0YC23V",
+        "source_team": "T0BBV0YC23V",
+        "user_profile": {
+            "avatar_hash": "02edacc06118",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2026-06-20\/11411232622593_02edacc06118a9d2d86c_72.png",
+            "first_name": "Anshika",
+            "real_name": "Anshika Sahu",
+            "display_name": "",
+            "team": "T0BBV0YC23V",
+            "name": "anshika15032004",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "MB7Zz",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0BCWKWKJAC"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Sprint 2 QA complete. PR #2 fixes applied:\n"
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " assignee_id now org-scoped (cross-tenant assignment blocked)\n"
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Internal comments hidden from customers\n"
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " 49\/49 Pest tests passing (135 assertions)\nApproving PR #2 for merge."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782553809.401839",
+        "edited": {
+            "user": "U0BCWKWKJAC",
+            "ts": "1782553810.000000"
+        },
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": "Great work Anshika! Those are exactly the right fixes — cross-tenant assignment and comment visibility are critical for multi-tenancy integrity. 49\/49 with 135 assertions is thorough coverage. PR #2 looking solid for merge :white_check_mark:",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0IF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Great work Anshika! Those are exactly the right fixes — cross-tenant assignment and comment visibility are critical for multi-tenancy integrity. 49\/49 with 135 assertions is thorough coverage. PR #2 looking solid for merge "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BC1BG8FQS",
+        "type": "message",
+        "ts": "1782556769.583689",
+        "client_msg_id": "d45e846b-64f2-4773-8e59-33c4a82adf25",
+        "text": "<@U0BCWKWKJAC> Sprint 3 QA complete. PR #3 fixes applied:\n:white_check_mark: Debounced search (300ms)\n:white_check_mark: Dedicated \/api\/dashboard-stats endpoint (server-side aggregation)\n:white_check_mark: Error state with retry on Dashboard\n:white_check_mark: Frontend build passes, 49 backend tests green\nApproving PR #3 for merge.",
+        "team": "T0BBV0YC23V",
+        "user_team": "T0BBV0YC23V",
+        "source_team": "T0BBV0YC23V",
+        "user_profile": {
+            "avatar_hash": "02edacc06118",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2026-06-20\/11411232622593_02edacc06118a9d2d86c_72.png",
+            "first_name": "Anshika",
+            "real_name": "Anshika Sahu",
+            "display_name": "",
+            "team": "T0BBV0YC23V",
+            "name": "anshika15032004",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Pwk4E",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0BCWKWKJAC"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Sprint 3 QA complete. PR #3 fixes applied:\n"
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Debounced search (300ms)\n"
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Dedicated \/api\/dashboard-stats endpoint (server-side aggregation)\n"
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Error state with retry on Dashboard\n"
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Frontend build passes, 49 backend tests green\nApproving PR #3 for merge."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782556791.313269",
+        "edited": {
+            "user": "U0BCWKWKJAC",
+            "ts": "1782556792.000000"
+        },
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": "Clean Sprint 3 ship Anshika! Moving dashboard aggregation server-side is a big win — kills any N+1 risk. Debounced search + error retry makes the frontend feel solid. PR #3 approved :white_check_mark:",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4CtJ0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Clean Sprint 3 ship Anshika! Moving dashboard aggregation server-side is a big win — kills any N+1 risk. Debounced search + error retry makes the frontend feel solid. PR #3 approved "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BC1BG8FQS",
+        "type": "message",
+        "ts": "1782560081.062089",
+        "client_msg_id": "d551a44b-37e0-4f33-924d-f29a340cd55f",
+        "text": "<@U0BCWKWKJAC> Sprint 4 QA complete. PR #4 fixes applied:\n:white_check_mark: N+1 SLA query fixed — eager loading slaPolicy\n:white_check_mark: 63\/63 Pest tests passing (168 assertions)\n:white_check_mark: Frontend build passes\nApproving PR #4 for merge.",
+        "team": "T0BBV0YC23V",
+        "user_team": "T0BBV0YC23V",
+        "source_team": "T0BBV0YC23V",
+        "user_profile": {
+            "avatar_hash": "02edacc06118",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2026-06-20\/11411232622593_02edacc06118a9d2d86c_72.png",
+            "first_name": "Anshika",
+            "real_name": "Anshika Sahu",
+            "display_name": "",
+            "team": "T0BBV0YC23V",
+            "name": "anshika15032004",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gDzQv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0BCWKWKJAC"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Sprint 4 QA complete. PR #4 fixes applied:\n"
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " N+1 SLA query fixed — eager loading slaPolicy\n"
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " 63\/63 Pest tests passing (168 assertions)\n"
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Frontend build passes\nApproving PR #4 for merge."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782560106.606919",
+        "edited": {
+            "user": "U0BCWKWKJAC",
+            "ts": "1782560109.000000"
+        },
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": "Sprint 4 looking great Anshika! That N+1 fix on the SLA query is important — eager loading `slaPolicy` will keep response times flat as data grows. 63 tests with 168 assertions is solid coverage growth. PR #4 approved :white_check_mark:",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "LJF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Sprint 4 looking great Anshika! That N+1 fix on the SLA query is important — eager loading "
+                            },
+                            {
+                                "type": "text",
+                                "text": "slaPolicy",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " will keep response times flat as data grows. 63 tests with 168 assertions is solid coverage growth. PR #4 approved "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

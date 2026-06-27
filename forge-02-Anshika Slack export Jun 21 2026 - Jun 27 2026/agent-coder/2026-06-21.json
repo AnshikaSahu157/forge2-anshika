@@ -1,0 +1,55 @@
+[
+    {
+        "subtype": "channel_join",
+        "user": "U0BC1BG8FQS",
+        "text": "<@U0BC1BG8FQS> has joined the channel",
+        "type": "message",
+        "ts": "1782039707.885069"
+    },
+    {
+        "user": "U0BC1BG8FQS",
+        "type": "message",
+        "ts": "1782040368.553939",
+        "client_msg_id": "24c24e3b-ebe6-4cda-bf53-eb9b04f856b0",
+        "text": "Invites have been sent! Kick back and relax while you wait for them to join.",
+        "team": "T0BBV0YC23V",
+        "user_team": "T0BBV0YC23V",
+        "source_team": "T0BBV0YC23V",
+        "user_profile": {
+            "avatar_hash": "02edacc06118",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2026-06-20\/11411232622593_02edacc06118a9d2d86c_72.png",
+            "first_name": "Anshika",
+            "real_name": "Anshika Sahu",
+            "display_name": "",
+            "team": "T0BBV0YC23V",
+            "name": "anshika15032004",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "J6kqS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Invites have been sent! Kick back and relax while you wait for them to join."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U0BCWKWKJAC",
+        "text": "<@U0BCWKWKJAC> has joined the channel",
+        "inviter": "U0BC1BG8FQS",
+        "type": "message",
+        "ts": "1782040376.448779"
+    }
+]

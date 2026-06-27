@@ -1,0 +1,1720 @@
+[
+    {
+        "user": "U0BC1BG8FQS",
+        "type": "message",
+        "ts": "1782532661.566079",
+        "client_msg_id": "50bc7192-6945-4f2e-b9e3-cf2b51932ef4",
+        "text": "<@U0BCWKWKJAC> hello",
+        "team": "T0BBV0YC23V",
+        "user_team": "T0BBV0YC23V",
+        "source_team": "T0BBV0YC23V",
+        "user_profile": {
+            "avatar_hash": "02edacc06118",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2026-06-20\/11411232622593_02edacc06118a9d2d86c_72.png",
+            "first_name": "Anshika",
+            "real_name": "Anshika Sahu",
+            "display_name": "",
+            "team": "T0BBV0YC23V",
+            "name": "anshika15032004",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "thread_ts": "1782532661.566079",
+        "reply_count": 2,
+        "reply_users_count": 1,
+        "latest_reply": "1782532675.165049",
+        "reply_users": [
+            "U0BCWKWKJAC"
+        ],
+        "replies": [
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782532665.727869"
+            },
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782532675.165049"
+            }
+        ],
+        "is_locked": false,
+        "subscribed": true,
+        "last_read": "1782532675.165049",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "BYEXU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0BCWKWKJAC"
+                            },
+                            {
+                                "type": "text",
+                                "text": " hello"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782532665.727869",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":mailbox_with_mail: No home channel is set for Slack. A home channel is where Hermes delivers cron job results and cross-platform messages.\n\nType \/hermes sethome to make this chat your home channel, or ignore to skip.",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782532661.566079",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Mo2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "mailbox_with_mail",
+                                "unicode": "1f4ec"
+                            },
+                            {
+                                "type": "text",
+                                "text": " No home channel is set for Slack. A home channel is where Hermes delivers cron job results and cross-platform messages.\n\nType \/hermes sethome to make this chat your home channel, or ignore to skip."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782532675.165049",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": "Hi Anshika Sahu! How can I help you today?",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782532661.566079",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "5JL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Hi Anshika Sahu! How can I help you today?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782532694.542209",
+        "edited": {
+            "user": "U0BCWKWKJAC",
+            "ts": "1782532694.000000"
+        },
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": "Hey. I just came online. Who am I? Who are you?",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2vSsk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Hey. I just came online. Who am I? Who are you?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BC1BG8FQS",
+        "type": "message",
+        "ts": "1782540436.685879",
+        "client_msg_id": "b4e78900-8a48-40a1-beaa-3faa610a7043",
+        "text": "<@U0BCWKWKJAC> hello! are you connected?",
+        "team": "T0BBV0YC23V",
+        "user_team": "T0BBV0YC23V",
+        "source_team": "T0BBV0YC23V",
+        "user_profile": {
+            "avatar_hash": "02edacc06118",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2026-06-20\/11411232622593_02edacc06118a9d2d86c_72.png",
+            "first_name": "Anshika",
+            "real_name": "Anshika Sahu",
+            "display_name": "",
+            "team": "T0BBV0YC23V",
+            "name": "anshika15032004",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "thread_ts": "1782540436.685879",
+        "reply_count": 18,
+        "reply_users_count": 1,
+        "latest_reply": "1782541320.102729",
+        "reply_users": [
+            "U0BCWKWKJAC"
+        ],
+        "replies": [
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782540439.458149"
+            },
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782540454.031349"
+            },
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782540454.045089"
+            },
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782540454.078959"
+            },
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782540454.079919"
+            },
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782540454.673859"
+            },
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782540593.409529"
+            },
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782540593.438409"
+            },
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782540593.470929"
+            },
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782540593.480099"
+            },
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782540594.179469"
+            },
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782540764.799939"
+            },
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782540764.806799"
+            },
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782540765.801419"
+            },
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782541129.816339"
+            },
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782541129.817509"
+            },
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782541130.360229"
+            },
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782541320.102729"
+            }
+        ],
+        "is_locked": false,
+        "subscribed": true,
+        "last_read": "1782541320.102729",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "YCoI1",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0BCWKWKJAC"
+                            },
+                            {
+                                "type": "text",
+                                "text": " hello! are you connected?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782540439.458149",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":mailbox_with_mail: No home channel is set for Slack. A home channel is where Hermes delivers cron job results and cross-platform messages.\n\nType \/hermes sethome to make this chat your home channel, or ignore to skip.",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782540436.685879",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "1MFyz",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "mailbox_with_mail",
+                                "unicode": "1f4ec"
+                            },
+                            {
+                                "type": "text",
+                                "text": " No home channel is set for Slack. A home channel is where Hermes delivers cron job results and cross-platform messages.\n\nType \/hermes sethome to make this chat your home channel, or ignore to skip."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782540454.031349",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":stopwatch: Rate limited. Waiting 2.3s (attempt 2\/3)...",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782540436.685879",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "eHJj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "stopwatch",
+                                "unicode": "23f1-fe0f"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Rate limited. Waiting 2.3s (attempt 2\/3)..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782540454.045089",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":stopwatch: Rate limited. Waiting 5.4s (attempt 3\/3)...",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782540436.685879",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "giFY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "stopwatch",
+                                "unicode": "23f1-fe0f"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Rate limited. Waiting 5.4s (attempt 3\/3)..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782540454.078959",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":warning: Max retries (3) exhausted — trying fallback...",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782540436.685879",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/aIB",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "warning",
+                                "unicode": "26a0-fe0f"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Max retries (3) exhausted — trying fallback..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782540454.079919",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":x: Rate limited after 3 retries — HTTP 429: Gemini HTTP 429 (RESOURCE_EXHAUSTED): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: <https:\/\/ai.google.dev\/gemini-api\/docs\/rate-limits>. To monitor your current usage, head to: <https:\/\/ai.dev\/rate-limit>. \n* Quota exceeded for metric: <http:\/\/generativelanguage.googleapis.com\/generate_content_free_tier_input_token_count|generativelanguage.googleapis.com\/generate_content_free_tier_input_token_count>, limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: <http:\/\/generativelanguage.googleapis.com\/generate_content_|generativelanguage.googleapis.com\/generate_content_>",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782540436.685879",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "UyN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "x",
+                                "unicode": "274c"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Rate limited after 3 retries — HTTP 429: Gemini HTTP 429 (RESOURCE_EXHAUSTED): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/ai.google.dev\/gemini-api\/docs\/rate-limits"
+                            },
+                            {
+                                "type": "text",
+                                "text": ". To monitor your current usage, head to: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/ai.dev\/rate-limit"
+                            },
+                            {
+                                "type": "text",
+                                "text": ". \n* Quota exceeded for metric: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "http:\/\/generativelanguage.googleapis.com\/generate_content_free_tier_input_token_count",
+                                "text": "generativelanguage.googleapis.com\/generate_content_free_tier_input_token_count"
+                            },
+                            {
+                                "type": "text",
+                                "text": ", limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "http:\/\/generativelanguage.googleapis.com\/generate_content_",
+                                "text": "generativelanguage.googleapis.com\/generate_content_"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782540454.673859",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": "API call failed after 3 retries: HTTP 429: Gemini HTTP 429 (RESOURCE_EXHAUSTED): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: <https:\/\/ai.google.dev\/gemini-api\/docs\/rate-limits>. To monitor your current usage, head to: <https:\/\/ai.dev\/rate-limit>. \n* Quota exceeded for metric: <http:\/\/generativelanguage.googleapis.com\/generate_content_free_tier_input_token_count|generativelanguage.googleapis.com\/generate_content_free_tier_input_token_count>, limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: <http:\/\/generativelanguage.googleapis.com\/generate_content_|generativelanguage.googleapis.com\/generate_content_>",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782540436.685879",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ipDPR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "API call failed after 3 retries: HTTP 429: Gemini HTTP 429 (RESOURCE_EXHAUSTED): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/ai.google.dev\/gemini-api\/docs\/rate-limits"
+                            },
+                            {
+                                "type": "text",
+                                "text": ". To monitor your current usage, head to: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/ai.dev\/rate-limit"
+                            },
+                            {
+                                "type": "text",
+                                "text": ". \n* Quota exceeded for metric: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "http:\/\/generativelanguage.googleapis.com\/generate_content_free_tier_input_token_count",
+                                "text": "generativelanguage.googleapis.com\/generate_content_free_tier_input_token_count"
+                            },
+                            {
+                                "type": "text",
+                                "text": ", limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "http:\/\/generativelanguage.googleapis.com\/generate_content_",
+                                "text": "generativelanguage.googleapis.com\/generate_content_"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782540460.064499",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":warning: Missing API key for the selected provider on the gateway. Configure provider auth, then try again.",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "K8YV",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "warning",
+                                "unicode": "26a0-fe0f"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Missing API key for the selected provider on the gateway. Configure provider auth, then try again."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782540593.409529",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":stopwatch: Rate limited. Waiting 4.3s (attempt 3\/3)...",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782540436.685879",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "N+Ab",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "stopwatch",
+                                "unicode": "23f1-fe0f"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Rate limited. Waiting 4.3s (attempt 3\/3)..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782540593.438409",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":stopwatch: Rate limited. Waiting 2.6s (attempt 2\/3)...",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782540436.685879",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "iz+S",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "stopwatch",
+                                "unicode": "23f1-fe0f"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Rate limited. Waiting 2.6s (attempt 2\/3)..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782540593.470929",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":x: Rate limited after 3 retries — HTTP 429: Gemini HTTP 429 (RESOURCE_EXHAUSTED): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: <https:\/\/ai.google.dev\/gemini-api\/docs\/rate-limits>. To monitor your current usage, head to: <https:\/\/ai.dev\/rate-limit>. \n* Quota exceeded for metric: <http:\/\/generativelanguage.googleapis.com\/generate_content_free_tier_requests|generativelanguage.googleapis.com\/generate_content_free_tier_requests>, limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: <http:\/\/generativelanguage.googleapis.com\/generate_content_free_tier|generativelanguage.googleapis.com\/generate_content_free_tier>",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782540436.685879",
+        "parent_user_id": "U0BC1BG8FQS",
+        "attachments": [
+            {
+                "from_url": "https:\/\/ai.google.dev\/gemini-api\/docs\/rate-limits",
+                "image_url": "https:\/\/ai.google.dev\/static\/site-assets\/images\/share-gemini-api-2.png",
+                "image_width": 1200,
+                "image_height": 675,
+                "image_bytes": 167729,
+                "service_icon": "https:\/\/www.gstatic.com\/devrel-devsite\/prod\/v11431966d26d9f049ef61662c2b798f1cdee8af320f1ba0f77a43eee64301d60\/googledevai\/images\/touchicon-180-new.png",
+                "id": 1,
+                "original_url": "https:\/\/ai.google.dev\/gemini-api\/docs\/rate-limits",
+                "fallback": "Google AI for Developers: Rate limits  |  Gemini API  |  Google AI for Developers",
+                "title": "Rate limits  |  Gemini API  |  Google AI for Developers",
+                "title_link": "https:\/\/ai.google.dev\/gemini-api\/docs\/rate-limits",
+                "service_name": "Google AI for Developers"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4YdT",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "x",
+                                "unicode": "274c"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Rate limited after 3 retries — HTTP 429: Gemini HTTP 429 (RESOURCE_EXHAUSTED): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/ai.google.dev\/gemini-api\/docs\/rate-limits"
+                            },
+                            {
+                                "type": "text",
+                                "text": ". To monitor your current usage, head to: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/ai.dev\/rate-limit"
+                            },
+                            {
+                                "type": "text",
+                                "text": ". \n* Quota exceeded for metric: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "http:\/\/generativelanguage.googleapis.com\/generate_content_free_tier_requests",
+                                "text": "generativelanguage.googleapis.com\/generate_content_free_tier_requests"
+                            },
+                            {
+                                "type": "text",
+                                "text": ", limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "http:\/\/generativelanguage.googleapis.com\/generate_content_free_tier",
+                                "text": "generativelanguage.googleapis.com\/generate_content_free_tier"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782540593.480099",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":warning: Max retries (3) exhausted — trying fallback...",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782540436.685879",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "DE6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "warning",
+                                "unicode": "26a0-fe0f"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Max retries (3) exhausted — trying fallback..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782540594.179469",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": "API call failed after 3 retries: HTTP 429: Gemini HTTP 429 (RESOURCE_EXHAUSTED): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: <https:\/\/ai.google.dev\/gemini-api\/docs\/rate-limits>. To monitor your current usage, head to: <https:\/\/ai.dev\/rate-limit>. \n* Quota exceeded for metric: <http:\/\/generativelanguage.googleapis.com\/generate_content_free_tier_requests|generativelanguage.googleapis.com\/generate_content_free_tier_requests>, limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: <http:\/\/generativelanguage.googleapis.com\/generate_content_free_tier|generativelanguage.googleapis.com\/generate_content_free_tier>",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782540436.685879",
+        "parent_user_id": "U0BC1BG8FQS",
+        "attachments": [
+            {
+                "from_url": "https:\/\/ai.google.dev\/gemini-api\/docs\/rate-limits",
+                "image_url": "https:\/\/ai.google.dev\/static\/site-assets\/images\/share-gemini-api-2.png",
+                "image_width": 1200,
+                "image_height": 675,
+                "image_bytes": 167729,
+                "service_icon": "https:\/\/www.gstatic.com\/devrel-devsite\/prod\/v11431966d26d9f049ef61662c2b798f1cdee8af320f1ba0f77a43eee64301d60\/googledevai\/images\/touchicon-180-new.png",
+                "id": 1,
+                "original_url": "https:\/\/ai.google.dev\/gemini-api\/docs\/rate-limits",
+                "fallback": "Google AI for Developers: Rate limits  |  Gemini API  |  Google AI for Developers",
+                "title": "Rate limits  |  Gemini API  |  Google AI for Developers",
+                "title_link": "https:\/\/ai.google.dev\/gemini-api\/docs\/rate-limits",
+                "service_name": "Google AI for Developers"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Txl",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "API call failed after 3 retries: HTTP 429: Gemini HTTP 429 (RESOURCE_EXHAUSTED): You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/ai.google.dev\/gemini-api\/docs\/rate-limits"
+                            },
+                            {
+                                "type": "text",
+                                "text": ". To monitor your current usage, head to: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/ai.dev\/rate-limit"
+                            },
+                            {
+                                "type": "text",
+                                "text": ". \n* Quota exceeded for metric: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "http:\/\/generativelanguage.googleapis.com\/generate_content_free_tier_requests",
+                                "text": "generativelanguage.googleapis.com\/generate_content_free_tier_requests"
+                            },
+                            {
+                                "type": "text",
+                                "text": ", limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "http:\/\/generativelanguage.googleapis.com\/generate_content_free_tier",
+                                "text": "generativelanguage.googleapis.com\/generate_content_free_tier"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782540764.799939",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":x: Non-retryable error (HTTP 401): HTTP 401: Error code: 401 - {'error': 'Unauthorized'}",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782540436.685879",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "3zj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "x",
+                                "unicode": "274c"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Non-retryable error (HTTP 401): HTTP 401: Error code: 401 - {'error': 'Unauthorized'}"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782540764.806799",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":warning: Non-retryable error (HTTP 401) — trying fallback...",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782540436.685879",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Qzs8q",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "warning",
+                                "unicode": "26a0-fe0f"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Non-retryable error (HTTP 401) — trying fallback..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782540765.801419",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":warning: Error code: 401 - {'error': 'Unauthorized'}",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782540436.685879",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bii7\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "warning",
+                                "unicode": "26a0-fe0f"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Error code: 401 - {'error': 'Unauthorized'}"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782541129.816339",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":warning: Non-retryable error (HTTP 404) — trying fallback...",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782540436.685879",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0qG9I",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "warning",
+                                "unicode": "26a0-fe0f"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Non-retryable error (HTTP 404) — trying fallback..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782541129.817509",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":x: Non-retryable error (HTTP 404): HTTP 404: Model 'deepseek\/deepseek-v4-pro' not supported. EastRouter exposes z-ai\/glm-* and moonshotai\/kimi-* models; use OpenRouter for other providers.",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782540436.685879",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "oRQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "x",
+                                "unicode": "274c"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Non-retryable error (HTTP 404): HTTP 404: Model 'deepseek\/deepseek-v4-pro' not supported. EastRouter exposes z-ai\/glm-"
+                            },
+                            {
+                                "type": "text",
+                                "text": " and moonshotai\/kimi-",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " models; use OpenRouter for other providers."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782541130.360229",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":warning: Error code: 404 - {'error': {'message': \"Model 'deepseek\/deepseek-v4-pro' not supported. EastRouter exposes z-ai\/glm-* and moonshotai\/kimi-* models; use OpenRouter for other providers.\", 'type': 'invalid_request_error', 'code': 'model_not_found', 'metadata': {'closest_match': 'moonshotai\/kimi-k2.7-code'}}}",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782540436.685879",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "JbhAt",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "warning",
+                                "unicode": "26a0-fe0f"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Error code: 404 - {'error': {'message': \"Model 'deepseek\/deepseek-v4-pro' not supported. EastRouter exposes z-ai\/glm-"
+                            },
+                            {
+                                "type": "text",
+                                "text": " and moonshotai\/kimi-",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " models; use OpenRouter for other providers.\", 'type': 'invalid_request_error', 'code': 'model_not_found', 'metadata': {'closest_match': 'moonshotai\/kimi-k2.7-code'}}}"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782541320.102729",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": "Hello Anshika! :wave: Yes, I'm connected and working now. There was a brief hiccup earlier due to a rate limit on the API, but everything is running smoothly now.\n\nHow can I help you today?",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782540436.685879",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "t8dX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Hello Anshika! "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "wave",
+                                "unicode": "1f44b"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Yes, I'm connected and working now. There was a brief hiccup earlier due to a rate limit on the API, but everything is running smoothly now.\n\nHow can I help you today?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BC1BG8FQS",
+        "type": "message",
+        "ts": "1782541562.536679",
+        "client_msg_id": "44ca8799-004e-44dd-9d69-30aba441749e",
+        "text": "<@U0BCWKWKJAC> You are the Product Owner for PulseDesk - a multi-tenant support desk SaaS built with Laravel 11, MySQL 8, React 19, Vite, Tailwind, Laravel Sanctum.\n\nThe repo is at E:\\forge2-anshika.\n\nPlan Sprint 1 goal: Set up Laravel 11 backend with MySQL, Sanctum auth, and multi-tenant foundation. Create max 5 scoped issues. Post the plan here and save it to E:\\forge2-anshika\\sprints\\sprint-01.md before writing any code.",
+        "team": "T0BBV0YC23V",
+        "user_team": "T0BBV0YC23V",
+        "source_team": "T0BBV0YC23V",
+        "user_profile": {
+            "avatar_hash": "02edacc06118",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2026-06-20\/11411232622593_02edacc06118a9d2d86c_72.png",
+            "first_name": "Anshika",
+            "real_name": "Anshika Sahu",
+            "display_name": "",
+            "team": "T0BBV0YC23V",
+            "name": "anshika15032004",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Ucz3+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0BCWKWKJAC"
+                            },
+                            {
+                                "type": "text",
+                                "text": " You are the Product Owner for PulseDesk - a multi-tenant support desk SaaS built with Laravel 11, MySQL 8, React 19, Vite, Tailwind, Laravel Sanctum.\n\nThe repo is at E:\\forge2-anshika.\n\nPlan Sprint 1 goal: Set up Laravel 11 backend with MySQL, Sanctum auth, and multi-tenant foundation. Create max 5 scoped issues. Post the plan here and save it to E:\\forge2-anshika\\sprints\\sprint-01.md before writing any code."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782541567.779599",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":warning: Missing API key for the selected provider on the gateway. Configure provider auth, then try again.",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tYb7t",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "warning",
+                                "unicode": "26a0-fe0f"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Missing API key for the selected provider on the gateway. Configure provider auth, then try again."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BC1BG8FQS",
+        "type": "message",
+        "ts": "1782542533.380579",
+        "client_msg_id": "211d412d-fe12-4a14-8f3c-c9bc774028fc",
+        "text": "<@U0BCWKWKJAC> what model are you using and what is your base URL?",
+        "team": "T0BBV0YC23V",
+        "user_team": "T0BBV0YC23V",
+        "source_team": "T0BBV0YC23V",
+        "user_profile": {
+            "avatar_hash": "02edacc06118",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2026-06-20\/11411232622593_02edacc06118a9d2d86c_72.png",
+            "first_name": "Anshika",
+            "real_name": "Anshika Sahu",
+            "display_name": "",
+            "team": "T0BBV0YC23V",
+            "name": "anshika15032004",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "thread_ts": "1782542533.380579",
+        "reply_count": 2,
+        "reply_users_count": 1,
+        "latest_reply": "1782542553.385019",
+        "reply_users": [
+            "U0BCWKWKJAC"
+        ],
+        "replies": [
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782542538.040339"
+            },
+            {
+                "user": "U0BCWKWKJAC",
+                "ts": "1782542553.385019"
+            }
+        ],
+        "is_locked": false,
+        "subscribed": true,
+        "last_read": "1782542553.385019",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "KT6ym",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0BCWKWKJAC"
+                            },
+                            {
+                                "type": "text",
+                                "text": " what model are you using and what is your base URL?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782542538.040339",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":mailbox_with_mail: No home channel is set for Slack. A home channel is where Hermes delivers cron job results and cross-platform messages.\n\nType \/hermes sethome to make this chat your home channel, or ignore to skip.",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782542533.380579",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fmgzo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "mailbox_with_mail",
+                                "unicode": "1f4ec"
+                            },
+                            {
+                                "type": "text",
+                                "text": " No home channel is set for Slack. A home channel is where Hermes delivers cron job results and cross-platform messages.\n\nType \/hermes sethome to make this chat your home channel, or ignore to skip."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782542553.385019",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": "Based on my session configuration:\n\n- *Model:* `z-ai\/glm-5.1`\n- *Provider:* `custom` (a custom provider defined in your Hermes config, rather than a built-in one like OpenAI or Anthropic)\n\nThe exact *base URL* isn't exposed to me directly in my runtime context — it's set in your Hermes config file under the custom provider definition. If you'd like, I can look it up for you by checking your config. Want me to do that?",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "thread_ts": "1782542533.380579",
+        "parent_user_id": "U0BC1BG8FQS",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "1y5o",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Based on my session configuration:\n\n- "
+                            },
+                            {
+                                "type": "text",
+                                "text": "Model:",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "text",
+                                "text": "z-ai\/glm-5.1",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n- "
+                            },
+                            {
+                                "type": "text",
+                                "text": "Provider:",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "text",
+                                "text": "custom",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " (a custom provider defined in your Hermes config, rather than a built-in one like OpenAI or Anthropic)\n\nThe exact "
+                            },
+                            {
+                                "type": "text",
+                                "text": "base URL",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " isn't exposed to me directly in my runtime context — it's set in your Hermes config file under the custom provider definition. If you'd like, I can look it up for you by checking your config. Want me to do that?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCWKWKJAC",
+        "type": "message",
+        "ts": "1782542577.385519",
+        "bot_id": "B0BC473JGE5",
+        "app_id": "A0BBW0V47GT",
+        "text": ":warning: Missing API key for the selected provider on the gateway. Configure provider auth, then try again.",
+        "team": "T0BBV0YC23V",
+        "bot_profile": {
+            "id": "B0BC473JGE5",
+            "app_id": "A0BBW0V47GT",
+            "user_id": "U0BCWKWKJAC",
+            "name": "OpenClaw Bot",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782040035,
+            "team_id": "T0BBV0YC23V"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "yz+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "warning",
+                                "unicode": "26a0-fe0f"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Missing API key for the selected provider on the gateway. Configure provider auth, then try again."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
