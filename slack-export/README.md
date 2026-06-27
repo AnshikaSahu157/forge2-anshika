@@ -6,3 +6,6 @@ Pick at least one (both is better):
    (you get per-channel JSON folders).
 2. SCREENSHOTS: put per-channel screenshots in screenshots/ showing real agent messages:
    sprint-main-01.png, agent-coder-01.png, agent-log-01.png, ci-cd-01.png, human-review-01.png
+
+Its in folder forge 02-Anshika Slack export Jun 21 2026- Jun 27 2026
+
