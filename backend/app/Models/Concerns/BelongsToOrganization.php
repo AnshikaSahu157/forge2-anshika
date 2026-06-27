@@ -3,7 +3,7 @@
 namespace App\Models\Concerns;
 
 use App\Models\Scopes\OrganizationScope;
-use Illuminate\Database\Eloquent\Builder;
+use App\Services\TenantContext;
 
 trait BelongsToOrganization
 {
@@ -12,8 +12,12 @@ trait BelongsToOrganization
         static::addGlobalScope(new OrganizationScope);
 
         static::creating(function ($model) {
-            if (! $model->organization_id && session()->has('organization_id')) {
-                $model->organization_id = session('organization_id');
+            if (! $model->organization_id) {
+                $tenantContext = app(TenantContext::class);
+
+                if ($tenantContext->hasOrganizationId()) {
+                    $model->organization_id = $tenantContext->getOrganizationId();
+                }
             }
         });
     }

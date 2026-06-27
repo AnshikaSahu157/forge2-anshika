@@ -1,12 +1,22 @@
 <?php
 
 use App\Models\Organization;
+use App\Models\Scopes\OrganizationScope;
 use App\Models\Ticket;
 use App\Models\User;
-use Illuminate\Support\Facades\Session;
+use App\Services\TenantContext;
+
+function setTenant(int $orgId): void
+{
+    app(TenantContext::class)->setOrganizationId($orgId);
+}
+
+function clearTenant(): void
+{
+    app(TenantContext::class)->clear();
+}
 
 beforeEach(function () {
-    // Create two organizations
     $this->org1 = Organization::create([
         'name' => 'Acme Corp',
         'slug' => 'acme-corp',
@@ -17,7 +27,6 @@ beforeEach(function () {
         'slug' => 'beta-inc',
     ]);
 
-    // Users for org1
     $this->admin1 = User::create([
         'organization_id' => $this->org1->id,
         'name' => 'Admin One',
@@ -45,7 +54,6 @@ beforeEach(function () {
         'password' => bcrypt('password'),
     ]);
 
-    // Users for org2
     $this->admin2 = User::create([
         'organization_id' => $this->org2->id,
         'name' => 'Admin Two',
@@ -64,8 +72,11 @@ beforeEach(function () {
         'password' => bcrypt('password'),
     ]);
 
-    // Set session to org1 for scoped queries
-    Session::put('organization_id', $this->org1->id);
+    setTenant($this->org1->id);
+});
+
+afterEach(function () {
+    clearTenant();
 });
 
 describe('Ticket CRUD', function () {
@@ -91,6 +102,18 @@ describe('Ticket CRUD', function () {
             'subject' => 'New bug report',
             'organization_id' => $this->org1->id,
         ]);
+    });
+
+    it('auto-fills organization_id from tenant context on create', function () {
+        $ticket = new Ticket();
+        $ticket->subject = 'Auto-org ticket';
+        $ticket->description = 'org_id should be auto-filled';
+        $ticket->status = 'open';
+        $ticket->priority = 'medium';
+        $ticket->requester_id = $this->customer1->id;
+        $ticket->save();
+
+        expect($ticket->organization_id)->toBe($this->org1->id);
     });
 
     it('can read a ticket', function () {
@@ -175,7 +198,6 @@ describe('Ticket CRUD', function () {
 
 describe('Cross-Tenant Isolation', function () {
     it('does not return tickets from another organization via global scope', function () {
-        // Create ticket in org1
         $org1Ticket = Ticket::create([
             'organization_id' => $this->org1->id,
             'subject' => 'Org1 Ticket',
@@ -185,16 +207,20 @@ describe('Cross-Tenant Isolation', function () {
             'requester_id' => $this->customer1->id,
         ]);
 
-        // Create ticket in org2
-        $org2Ticket = Ticket::factory()->create([
-            'organization_id' => $this->org2->id,
-            'requester_id' => User::factory()->create([
-                'organization_id' => $this->org2->id,
-            ])->id,
-        ]);
+        // Bypass scope to create org2 ticket
+        $org2Id = $this->org2->id;
+        $org2UserId = User::factory()->create(['organization_id' => $org2Id])->id;
 
-        // With session set to org1, we should only see org1 tickets
-        Session::put('organization_id', $this->org1->id);
+        $org2Ticket = new Ticket();
+        $org2Ticket->organization_id = $org2Id;
+        $org2Ticket->subject = 'Org2 Ticket';
+        $org2Ticket->description = 'Belongs to org2';
+        $org2Ticket->status = 'open';
+        $org2Ticket->priority = 'low';
+        $org2Ticket->requester_id = $org2UserId;
+        $org2Ticket->saveQuietly(); // bypass creating hook + scope
+
+        setTenant($this->org1->id);
         $visibleTickets = Ticket::all();
 
         expect($visibleTickets)->toHaveCount(1)
@@ -203,25 +229,26 @@ describe('Cross-Tenant Isolation', function () {
     });
 
     it('cannot access another organization ticket by ID when scoped', function () {
-        // Create a ticket in org2
-        $org2Ticket = Ticket::factory()->create([
-            'organization_id' => $this->org2->id,
-            'requester_id' => User::factory()->create([
-                'organization_id' => $this->org2->id,
-            ])->id,
-        ]);
+        $org2Id = $this->org2->id;
+        $org2UserId = User::factory()->create(['organization_id' => $org2Id])->id;
 
-        // Switch session to org1
-        Session::put('organization_id', $this->org1->id);
+        $org2Ticket = new Ticket();
+        $org2Ticket->organization_id = $org2Id;
+        $org2Ticket->subject = 'Org2 Secret';
+        $org2Ticket->description = 'Should not be visible to org1';
+        $org2Ticket->status = 'open';
+        $org2Ticket->priority = 'high';
+        $org2Ticket->requester_id = $org2UserId;
+        $org2Ticket->saveQuietly();
 
-        // Attempt to find org2's ticket while scoped to org1
+        setTenant($this->org1->id);
+
         $found = Ticket::find($org2Ticket->id);
 
         expect($found)->toBeNull();
     });
 
     it('returns different ticket sets for different organizations', function () {
-        // Create tickets for both orgs
         Ticket::create([
             'organization_id' => $this->org1->id,
             'subject' => 'Acme Only',
@@ -231,29 +258,35 @@ describe('Cross-Tenant Isolation', function () {
             'requester_id' => $this->customer1->id,
         ]);
 
-        $org2Customer = User::factory()->create([
-            'organization_id' => $this->org2->id,
-        ]);
+        $org2Id = $this->org2->id;
+        $org2UserId = User::factory()->create(['organization_id' => $org2Id])->id;
 
-        Ticket::create([
-            'organization_id' => $this->org2->id,
-            'subject' => 'Beta Only',
-            'description' => 'Only visible to Beta',
-            'status' => 'open',
-            'priority' => 'high',
-            'requester_id' => $org2Customer->id,
-        ]);
+        $betaTicket = new Ticket();
+        $betaTicket->organization_id = $org2Id;
+        $betaTicket->subject = 'Beta Only';
+        $betaTicket->description = 'Only visible to Beta';
+        $betaTicket->status = 'open';
+        $betaTicket->priority = 'high';
+        $betaTicket->requester_id = $org2UserId;
+        $betaTicket->saveQuietly();
 
-        // Check org1 visibility
-        Session::put('organization_id', $this->org1->id);
+        setTenant($this->org1->id);
         $org1Tickets = Ticket::all();
         expect($org1Tickets)->toHaveCount(1)
             ->and($org1Tickets->first()->subject)->toBe('Acme Only');
 
-        // Check org2 visibility
-        Session::put('organization_id', $this->org2->id);
+        setTenant($this->org2->id);
         $org2Tickets = Ticket::all();
         expect($org2Tickets)->toHaveCount(1)
             ->and($org2Tickets->first()->subject)->toBe('Beta Only');
+    });
+
+    it('middleware sets tenant context from authenticated user', function () {
+        $this->actingAs($this->admin1, 'sanctum');
+
+        $response = $this->getJson('/api/user');
+
+        $response->assertOk();
+        expect(app(TenantContext::class)->getOrganizationId())->toBe($this->org1->id);
     });
 });
