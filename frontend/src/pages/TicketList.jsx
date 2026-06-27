@@ -8,6 +8,10 @@ export default function TicketList() {
   const [meta, setMeta] = useState(null)
   const [filters, setFilters] = useState({ status: '', priority: '', assignee_id: '', search: '' })
   const [page, setPage] = useState(1)
+  const [showCreate, setShowCreate] = useState(false)
+  const [createForm, setCreateForm] = useState({ subject: '', description: '', priority: 'medium' })
+  const [creating, setCreating] = useState(false)
+  const [createError, setCreateError] = useState('')
 
   const fetchTickets = useCallback(async () => {
     setLoading(true)
@@ -40,6 +44,27 @@ export default function TicketList() {
     setPage(1)
   }
 
+  const handleCreate = async (e) => {
+    e.preventDefault()
+    setCreateError('')
+    setCreating(true)
+    try {
+      const { data } = await api.post('/api/tickets', createForm)
+      setTickets((prev) => [data, ...prev])
+      setShowCreate(false)
+      setCreateForm({ subject: '', description: '', priority: 'medium' })
+    } catch (err) {
+      const errors = err.response?.data?.errors
+      if (errors) {
+        setCreateError(Object.values(errors).flat().join(' '))
+      } else {
+        setCreateError(err.response?.data?.message || 'Failed to create ticket')
+      }
+    } finally {
+      setCreating(false)
+    }
+  }
+
   const statusBadge = (status) => {
     const colors = {
       open: 'bg-blue-100 text-blue-800',
@@ -62,7 +87,69 @@ export default function TicketList() {
 
   return (
     <div className="space-y-4">
-      <h1 className="text-2xl font-bold">Tickets</h1>
+      <div className="flex items-center justify-between">
+        <h1 className="text-2xl font-bold">Tickets</h1>
+        <button
+          onClick={() => setShowCreate(!showCreate)}
+          className="bg-primary-600 text-white px-4 py-1.5 rounded-md text-sm hover:bg-primary-700 font-medium"
+        >
+          {showCreate ? 'Cancel' : '+ New Ticket'}
+        </button>
+      </div>
+
+      {/* Create Ticket Form */}
+      {showCreate && (
+        <div className="bg-white rounded-lg shadow-sm border p-6">
+          <h2 className="text-lg font-semibold mb-4">Create New Ticket</h2>
+          {createError && (
+            <div className="mb-4 bg-red-50 border border-red-200 text-red-700 px-4 py-2 rounded-md text-sm">{createError}</div>
+          )}
+          <form onSubmit={handleCreate} className="space-y-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+              <input
+                type="text"
+                value={createForm.subject}
+                onChange={(e) => setCreateForm((p) => ({ ...p, subject: e.target.value }))}
+                required
+                className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+                placeholder="Brief summary of the issue"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Description</label>
+              <textarea
+                value={createForm.description}
+                onChange={(e) => setCreateForm((p) => ({ ...p, description: e.target.value }))}
+                required
+                rows={4}
+                className="w-full px-3 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+                placeholder="Describe the issue in detail..."
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Priority</label>
+              <select
+                value={createForm.priority}
+                onChange={(e) => setCreateForm((p) => ({ ...p, priority: e.target.value }))}
+                className="px-3 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500"
+              >
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+                <option value="urgent">Urgent</option>
+              </select>
+            </div>
+            <button
+              type="submit"
+              disabled={creating}
+              className="bg-primary-600 text-white px-4 py-2 rounded-md text-sm hover:bg-primary-700 disabled:opacity-50 font-medium"
+            >
+              {creating ? 'Creating...' : 'Create Ticket'}
+            </button>
+          </form>
+        </div>
+      )}
 
       {/* Filters */}
       <div className="bg-white rounded-lg shadow-sm border p-4">
