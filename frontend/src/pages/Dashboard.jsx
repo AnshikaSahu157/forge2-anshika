@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend } from 'recharts'
 import api from '../api'
 
 export default function Dashboard() {
@@ -20,6 +21,16 @@ export default function Dashboard() {
           if (byPriority[t.priority] !== undefined) byPriority[t.priority]++
         })
 
+        const statusData = Object.entries(byStatus).map(([name, value]) => ({
+          name: name.replace('_', ' '),
+          value,
+        }))
+
+        const priorityData = Object.entries(byPriority).map(([name, value]) => ({
+          name,
+          value,
+        }))
+
         // last 7 days
         const days = []
         for (let i = 6; i >= 0; i--) {
@@ -34,7 +45,9 @@ export default function Dashboard() {
           if (day) day.count++
         })
 
-        setStats({ byStatus, byPriority, perDay: days, total: tickets.length })
+        const perDayData = days.map((d) => ({ name: d.label, tickets: d.count }))
+
+        setStats({ statusData, priorityData, perDayData, total: tickets.length })
       } catch (err) {
         console.error('Dashboard load failed', err)
       } finally {
@@ -45,19 +58,8 @@ export default function Dashboard() {
 
   if (loading) return <div className="text-gray-500">Loading dashboard...</div>
 
-  const statusColors = {
-    open: 'bg-blue-100 text-blue-800',
-    in_progress: 'bg-yellow-100 text-yellow-800',
-    resolved: 'bg-green-100 text-green-800',
-    closed: 'bg-gray-100 text-gray-800',
-  }
-
-  const priorityColors = {
-    low: 'bg-gray-100 text-gray-800',
-    medium: 'bg-blue-100 text-blue-800',
-    high: 'bg-orange-100 text-orange-800',
-    urgent: 'bg-red-100 text-red-800',
-  }
+  const statusColors = ['#3b82f6', '#eab308', '#22c55e', '#9ca3af']
+  const priorityColors = ['#9ca3af', '#3b82f6', '#f97316', '#ef4444']
 
   return (
     <div className="space-y-6">
@@ -66,54 +68,53 @@ export default function Dashboard() {
         <Link to="/tickets" className="text-primary-600 hover:underline text-sm font-medium">View all tickets →</Link>
       </div>
 
-      {/* Status Cards */}
-      <div>
-        <h2 className="text-sm font-semibold text-gray-500 uppercase mb-3">Tickets by Status</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {Object.entries(stats.byStatus).map(([status, count]) => (
-            <div key={status} className="bg-white rounded-lg shadow-sm border p-5">
-              <div className={`inline-block px-2 py-0.5 rounded text-xs font-medium mb-2 ${statusColors[status]}`}>
-                {status.replace('_', ' ')}
-              </div>
-              <div className="text-3xl font-bold">{count}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Priority Cards */}
-      <div>
-        <h2 className="text-sm font-semibold text-gray-500 uppercase mb-3">Tickets by Priority</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {Object.entries(stats.byPriority).map(([priority, count]) => (
-            <div key={priority} className="bg-white rounded-lg shadow-sm border p-5">
-              <div className={`inline-block px-2 py-0.5 rounded text-xs font-medium mb-2 ${priorityColors[priority]}`}>
-                {priority}
-              </div>
-              <div className="text-3xl font-bold">{count}</div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Per Day Chart */}
-      <div>
-        <h2 className="text-sm font-semibold text-gray-500 uppercase mb-3">Tickets Created (Last 7 Days)</h2>
+      {/* Charts Row */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Status Pie Chart */}
         <div className="bg-white rounded-lg shadow-sm border p-6">
-          <div className="flex items-end justify-between gap-2 h-48">
-            {stats.perDay.map((day) => {
-              const maxCount = Math.max(...stats.perDay.map((d) => d.count), 1)
-              const height = (day.count / maxCount) * 100
-              return (
-                <div key={day.date} className="flex-1 flex flex-col items-center gap-2">
-                  <span className="text-xs font-medium text-gray-600">{day.count}</span>
-                  <div className="w-full bg-primary-500 rounded-t-md transition-all" style={{ height: `${height}%`, minHeight: '4px' }}></div>
-                  <span className="text-xs text-gray-400">{day.label}</span>
-                </div>
-              )
-            })}
-          </div>
+          <h2 className="text-sm font-semibold text-gray-500 uppercase mb-4">Tickets by Status</h2>
+          <ResponsiveContainer width="100%" height={250}>
+            <PieChart>
+              <Pie data={stats.statusData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={80} label>
+                {stats.statusData.map((_, index) => (
+                  <Cell key={index} fill={statusColors[index % statusColors.length]} />
+                ))}
+              </Pie>
+              <Tooltip />
+              <Legend />
+            </PieChart>
+          </ResponsiveContainer>
         </div>
+
+        {/* Priority Pie Chart */}
+        <div className="bg-white rounded-lg shadow-sm border p-6">
+          <h2 className="text-sm font-semibold text-gray-500 uppercase mb-4">Tickets by Priority</h2>
+          <ResponsiveContainer width="100%" height={250}>
+            <PieChart>
+              <Pie data={stats.priorityData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={80} label>
+                {stats.priorityData.map((_, index) => (
+                  <Cell key={index} fill={priorityColors[index % priorityColors.length]} />
+                ))}
+              </Pie>
+              <Tooltip />
+              <Legend />
+            </PieChart>
+          </ResponsiveContainer>
+        </div>
+      </div>
+
+      {/* Per Day Bar Chart */}
+      <div className="bg-white rounded-lg shadow-sm border p-6">
+        <h2 className="text-sm font-semibold text-gray-500 uppercase mb-4">Tickets Created (Last 7 Days)</h2>
+        <ResponsiveContainer width="100%" height={300}>
+          <BarChart data={stats.perDayData}>
+            <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
+            <XAxis dataKey="name" tick={{ fontSize: 12 }} />
+            <YAxis allowDecimals={false} tick={{ fontSize: 12 }} />
+            <Tooltip />
+            <Bar dataKey="tickets" fill="#3b82f6" radius={[4, 4, 0, 0]} />
+          </BarChart>
+        </ResponsiveContainer>
       </div>
 
       <div className="text-sm text-gray-400">Total tickets: {stats.total}</div>
