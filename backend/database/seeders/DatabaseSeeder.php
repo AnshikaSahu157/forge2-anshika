@@ -127,6 +127,18 @@ class DatabaseSeeder extends Seeder
         ];
 
         for ($i = 0; $i < 12; $i++) {
+            // Vary created_at: some tickets old enough to breach SLA
+            // Tickets 0,1 (urgent, high) — created 2 days ago (breached)
+            // Tickets 2,3 (high, medium) — created 3 days ago (breached for high, warning for medium)
+            // Tickets 4-7 — created 12 hours ago (within SLA)
+            // Tickets 8-11 — created 1 hour ago (fresh)
+            $hoursAgo = match ($i) {
+                0, 1 => 48,
+                2, 3 => 72,
+                4, 5, 6, 7 => 12,
+                default => 1,
+            };
+
             $ticket = Ticket::create([
                 'organization_id' => $org->id,
                 'subject' => $subjects[$i],
@@ -136,6 +148,8 @@ class DatabaseSeeder extends Seeder
                 'requester_id' => $requesters[$i]->id,
                 'assignee_id' => $assignees[$i]?->id,
                 'tags' => $tagsPool[$i],
+                'created_at' => now()->subHours($hoursAgo),
+                'updated_at' => now()->subHours($hoursAgo),
             ]);
 
             ActivityLog::create([

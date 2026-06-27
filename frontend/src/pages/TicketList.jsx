@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react'
 import { Link } from 'react-router-dom'
 import api from '../api'
 import { useDebounce } from '../hooks/useDebounce'
+import SlaBadge from '../components/SlaBadge'
 
 export default function TicketList() {
   const [tickets, setTickets] = useState([])
@@ -232,6 +233,7 @@ export default function TicketList() {
                 <th className="text-left px-4 py-3 text-xs font-semibold text-gray-500 uppercase">Subject</th>
                 <th className="text-left px-4 py-3 text-xs font-semibold text-gray-500 uppercase">Status</th>
                 <th className="text-left px-4 py-3 text-xs font-semibold text-gray-500 uppercase">Priority</th>
+                <th className="text-left px-4 py-3 text-xs font-semibold text-gray-500 uppercase hidden lg:table-cell">SLA</th>
                 <th className="text-left px-4 py-3 text-xs font-semibold text-gray-500 uppercase hidden md:table-cell">Requester</th>
                 <th className="text-left px-4 py-3 text-xs font-semibold text-gray-500 uppercase hidden md:table-cell">Assignee</th>
               </tr>
@@ -260,6 +262,9 @@ export default function TicketList() {
                     <span className={`inline-block px-2 py-0.5 rounded text-xs font-medium ${priorityBadge(ticket.priority)}`}>
                       {ticket.priority}
                     </span>
+                  </td>
+                  <td className="px-4 py-3 hidden lg:table-cell">
+                    <SlaBadge slaStatus={ticket.sla_status} />
                   </td>
                   <td className="px-4 py-3 text-sm text-gray-600 hidden md:table-cell">{ticket.requester?.name}</td>
                   <td className="px-4 py-3 text-sm text-gray-600 hidden md:table-cell">{ticket.assignee?.name || '—'}</td>
