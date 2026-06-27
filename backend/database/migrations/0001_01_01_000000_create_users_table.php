@@ -19,7 +19,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('organization_id')->constrained()->cascadeOnDelete();
             $table->string('name');
-            $table->string('email')->unique();
+            $table->string('email');
+            $table->unique(['organization_id', 'email']);
             $table->string('role')->default('customer'); // admin, agent, customer
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
