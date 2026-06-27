@@ -1,5 +1,6 @@
 import { Outlet, NavLink } from 'react-router-dom'
 import { useAuth } from './AuthContext'
+import NotificationBell from './components/NotificationBell'
 
 export default function App() {
   const { user, logout } = useAuth()
@@ -20,6 +21,7 @@ export default function App() {
               </div>
             </div>
             <div className="flex items-center space-x-4">
+              <NotificationBell />
               <span className="text-sm text-gray-600">{user?.name} ({user?.role})</span>
               <button onClick={logout} className="text-sm text-red-600 hover:text-red-800 font-medium">Logout</button>
             </div>

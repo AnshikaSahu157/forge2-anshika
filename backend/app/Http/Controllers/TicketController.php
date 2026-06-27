@@ -5,9 +5,11 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreTicketRequest;
 use App\Http\Requests\UpdateTicketRequest;
 use App\Models\ActivityLog;
+use App\Models\Notification;
 use App\Models\Ticket;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 class TicketController extends Controller
 {
@@ -35,7 +37,7 @@ class TicketController extends Controller
         }
 
         return response()->json(
-            $query->with(['requester', 'assignee'])->latest()->paginate(15)
+            $query->with(['requester', 'assignee', 'slaPolicy'])->latest()->paginate(15)
         );
     }
 
@@ -106,5 +108,60 @@ class TicketController extends Controller
         $ticket->delete();
 
         return response()->json(null, 204);
+    }
+
+    public function claim(Request $request, Ticket $ticket): JsonResponse
+    {
+        $this->authorize('update', $ticket);
+
+        if ($ticket->assignee_id) {
+            return response()->json(['message' => 'Ticket already assigned'], 422);
+        }
+
+        $ticket->update(['assignee_id' => $request->user()->id]);
+
+        ActivityLog::create([
+            'organization_id' => $ticket->organization_id,
+            'ticket_id' => $ticket->id,
+            'user_id' => $request->user()->id,
+            'action' => 'claimed',
+            'properties' => ['agent' => $request->user()->name],
+        ]);
+
+        return response()->json($ticket->fresh()->load(['requester', 'assignee']));
+    }
+
+    public function assign(Request $request, Ticket $ticket): JsonResponse
+    {
+        $this->authorize('update', $ticket);
+
+        $validated = $request->validate([
+            'assignee_id' => ['required', Rule::exists('users', 'id')->where('organization_id', $request->user()->organization_id)],
+        ]);
+
+        $oldAssignee = $ticket->assignee_id;
+        $ticket->update(['assignee_id' => $validated['assignee_id']]);
+
+        ActivityLog::create([
+            'organization_id' => $ticket->organization_id,
+            'ticket_id' => $ticket->id,
+            'user_id' => $request->user()->id,
+            'action' => 'assigned',
+            'properties' => ['from' => $oldAssignee, 'to' => $validated['assignee_id']],
+        ]);
+
+        // Notify the new assignee
+        Notification::create([
+            'organization_id' => $ticket->organization_id,
+            'user_id' => $validated['assignee_id'],
+            'type' => 'ticket_assigned',
+            'data' => [
+                'ticket_id' => $ticket->id,
+                'ticket_subject' => $ticket->subject,
+                'assigned_by' => $request->user()->name,
+            ],
+        ]);
+
+        return response()->json($ticket->fresh()->load(['requester', 'assignee']));
     }
 }

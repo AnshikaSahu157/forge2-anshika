@@ -2,12 +2,15 @@ import { useState, useEffect, useCallback } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import api from '../api'
 import { useAuth } from '../AuthContext'
+import SlaBadge from '../components/SlaBadge'
+import ActivityTimeline from '../components/ActivityTimeline'
 
 export default function TicketDetail() {
   const { id } = useParams()
   const { isAgent } = useAuth()
   const [ticket, setTicket] = useState(null)
   const [comments, setComments] = useState([])
+  const [activities, setActivities] = useState([])
   const [loading, setLoading] = useState(true)
   const [reply, setReply] = useState('')
   const [isInternal, setIsInternal] = useState(false)
@@ -18,12 +21,14 @@ export default function TicketDetail() {
   const fetchTicket = useCallback(async () => {
     setLoading(true)
     try {
-      const [ticketRes, commentsRes] = await Promise.all([
+      const [ticketRes, commentsRes, activityRes] = await Promise.all([
         api.get(`/api/tickets/${id}`),
         api.get(`/api/tickets/${id}/comments`),
+        api.get(`/api/tickets/${id}/activity`),
       ])
       setTicket(ticketRes.data)
       setComments(commentsRes.data)
+      setActivities(activityRes.data)
       setEditForm({ status: ticketRes.data.status, priority: ticketRes.data.priority })
     } catch (err) {
       console.error('Failed to load ticket', err)
@@ -60,6 +65,24 @@ export default function TicketDetail() {
       setEditing(false)
     } catch (err) {
       console.error('Failed to update ticket', err)
+    }
+  }
+
+  const handleClaim = async () => {
+    try {
+      const { data } = await api.post(`/api/tickets/${id}/claim`)
+      setTicket(data)
+    } catch (err) {
+      console.error('Failed to claim ticket', err)
+    }
+  }
+
+  const handleAssign = async (agentId) => {
+    try {
+      const { data } = await api.post(`/api/tickets/${id}/assign`, { assignee_id: agentId })
+      setTicket(data)
+    } catch (err) {
+      console.error('Failed to assign ticket', err)
     }
   }
 
@@ -104,6 +127,7 @@ export default function TicketDetail() {
               <span className={`px-2 py-0.5 rounded text-xs font-medium ${priorityBadge(ticket.priority)}`}>
                 {ticket.priority}
               </span>
+              <SlaBadge slaStatus={ticket.sla_status} />
             </div>
           </div>
           {isAgent() && (
@@ -158,7 +182,14 @@ export default function TicketDetail() {
           </div>
           <div>
             <span className="text-gray-400">Assignee</span>
-            <p className="font-medium">{ticket.assignee?.name || 'Unassigned'}</p>
+            <div className="flex items-center gap-2">
+              <p className="font-medium">{ticket.assignee?.name || 'Unassigned'}</p>
+              {!ticket.assignee_id && isAgent() && (
+                <button onClick={handleClaim} className="text-xs bg-primary-600 text-white px-2 py-0.5 rounded hover:bg-primary-700">
+                  Claim
+                </button>
+              )}
+            </div>
           </div>
           <div>
             <span className="text-gray-400">Created</span>
@@ -174,6 +205,12 @@ export default function TicketDetail() {
           <h3 className="text-xs font-semibold text-gray-400 uppercase mb-2">Description</h3>
           <p className="text-sm text-gray-700 whitespace-pre-wrap">{ticket.description}</p>
         </div>
+      </div>
+
+      {/* Activity Timeline */}
+      <div className="bg-white rounded-lg shadow-sm border p-6">
+        <h2 className="text-lg font-semibold mb-4">Activity Timeline</h2>
+        <ActivityTimeline activities={activities} />
       </div>
 
       {/* Conversation Thread */}
