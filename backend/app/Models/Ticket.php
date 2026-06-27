@@ -56,9 +56,8 @@ class Ticket extends Model
 
     public function getSlaStatusAttribute(): array
     {
-        $policy = SlaPolicy::where('organization_id', $this->organization_id)
-            ->where('priority', $this->priority)
-            ->first();
+        // Use eager-loaded relationship if available, otherwise query
+        $policy = $this->relationLoaded('slaPolicy') ? $this->slaPolicy : SlaPolicy::where('organization_id', $this->organization_id)->where('priority', $this->priority)->first();
 
         if (! $policy) {
             return [

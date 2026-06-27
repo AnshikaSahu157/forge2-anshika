@@ -37,7 +37,7 @@ class TicketController extends Controller
         }
 
         return response()->json(
-            $query->with(['requester', 'assignee'])->latest()->paginate(15)
+            $query->with(['requester', 'assignee', 'slaPolicy'])->latest()->paginate(15)
         );
     }
 
