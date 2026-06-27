@@ -3,6 +3,7 @@
 use App\Http\Controllers\ActivityLogController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TicketController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -24,6 +25,9 @@ Route::middleware(['auth:sanctum', 'tenant'])->group(function () {
     // Comments
     Route::get('/tickets/{ticket}/comments', [CommentController::class, 'index']);
     Route::post('/tickets/{ticket}/comments', [CommentController::class, 'store']);
+
+    // Dashboard
+    Route::get('/dashboard-stats', [DashboardController::class, 'stats']);
 
     // Activity Log
     Route::get('/tickets/{ticket}/activity', [ActivityLogController::class, 'index']);
