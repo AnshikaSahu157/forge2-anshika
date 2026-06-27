@@ -17,11 +17,12 @@ return Application::configure(basePath: dirname(__DIR__))
             'tenant' => \App\Http\Middleware\SetTenantContext::class,
         ]);
 
-        // Run tenant context setup for all API requests after Sanctum auth
         $middleware->appendToGroup('api', \App\Http\Middleware\SetTenantContext::class);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->shouldRenderJsonWhen(
             fn (Request $request) => $request->is('api/*'),
         );
-    })->create();
+    })
+    ->withSchedule(fn () => [])
+    ->create();
