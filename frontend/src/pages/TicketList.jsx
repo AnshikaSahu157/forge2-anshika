@@ -1,12 +1,15 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Link } from 'react-router-dom'
 import api from '../api'
+import { useDebounce } from '../hooks/useDebounce'
 
 export default function TicketList() {
   const [tickets, setTickets] = useState([])
   const [loading, setLoading] = useState(true)
   const [meta, setMeta] = useState(null)
   const [filters, setFilters] = useState({ status: '', priority: '', assignee_id: '', search: '' })
+  const [searchInput, setSearchInput] = useState('')
+  const debouncedSearch = useDebounce(searchInput, 300)
   const [page, setPage] = useState(1)
   const [showCreate, setShowCreate] = useState(false)
   const [createForm, setCreateForm] = useState({ subject: '', description: '', priority: 'medium' })
@@ -33,6 +36,14 @@ export default function TicketList() {
   }, [page, filters])
 
   useEffect(() => { fetchTickets() }, [fetchTickets])
+
+  // Update search filter when debounced value changes
+  useEffect(() => {
+    if (debouncedSearch !== filters.search) {
+      setFilters((prev) => ({ ...prev, search: debouncedSearch }))
+      setPage(1)
+    }
+  }, [debouncedSearch]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleFilterChange = (key, value) => {
     setFilters((prev) => ({ ...prev, [key]: value }))
@@ -158,8 +169,8 @@ export default function TicketList() {
             <label className="block text-xs font-medium text-gray-500 mb-1">Search</label>
             <input
               type="text"
-              value={filters.search}
-              onChange={(e) => handleFilterChange('search', e.target.value)}
+              value={searchInput}
+              onChange={(e) => setSearchInput(e.target.value)}
               placeholder="Search subject..."
               className="w-full px-3 py-1.5 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-primary-500"
             />
