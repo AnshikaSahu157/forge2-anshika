@@ -13,7 +13,14 @@ class CommentController extends Controller
     {
         $this->authorize('view', $ticket);
 
-        return response()->json($ticket->comments()->with('user')->latest()->get());
+        $query = $ticket->comments()->with('user')->latest();
+
+        // Customers can only see public comments
+        if (! request()->user()->isAgent()) {
+            $query->where('is_internal', false);
+        }
+
+        return response()->json($query->get());
     }
 
     public function store(StoreCommentRequest $request, Ticket $ticket): JsonResponse

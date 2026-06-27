@@ -57,6 +57,59 @@ describe('Comments', function () {
             ->assertJsonPath('0.body', 'First comment');
     });
 
+    it('hides internal comments from customers', function () {
+        $this->ticket->comments()->create([
+            'organization_id' => $this->org->id,
+            'user_id' => $this->admin->id,
+            'body' => 'Public comment',
+            'is_internal' => false,
+        ]);
+
+        $this->ticket->comments()->create([
+            'organization_id' => $this->org->id,
+            'user_id' => $this->admin->id,
+            'body' => 'Secret internal note',
+            'is_internal' => true,
+        ]);
+
+        $token = $this->customer->createToken('test')->plainTextToken;
+
+        $response = $this->withToken($token)
+            ->getJson("/api/tickets/{$this->ticket->id}/comments");
+
+        $response->assertOk();
+        $bodies = collect($response->json())->pluck('body');
+        expect($bodies)->toContain('Public comment')
+            ->and($bodies)->not->toContain('Secret internal note')
+            ->and($bodies)->toHaveCount(1);
+    });
+
+    it('shows internal comments to admins', function () {
+        $this->ticket->comments()->create([
+            'organization_id' => $this->org->id,
+            'user_id' => $this->admin->id,
+            'body' => 'Public comment',
+            'is_internal' => false,
+        ]);
+
+        $this->ticket->comments()->create([
+            'organization_id' => $this->org->id,
+            'user_id' => $this->admin->id,
+            'body' => 'Secret internal note',
+            'is_internal' => true,
+        ]);
+
+        $token = $this->admin->createToken('test')->plainTextToken;
+
+        $response = $this->withToken($token)
+            ->getJson("/api/tickets/{$this->ticket->id}/comments");
+
+        $response->assertOk();
+        $bodies = collect($response->json())->pluck('body');
+        expect($bodies)->toContain('Public comment', 'Secret internal note')
+            ->and($bodies)->toHaveCount(2);
+    });
+
     it('can create a comment on a ticket', function () {
         $token = $this->admin->createToken('test')->plainTextToken;
 
